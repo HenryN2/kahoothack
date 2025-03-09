@@ -183,6 +183,7 @@
                     'Authorization': `Bearer ${apiKey}`
                 },
                 body: JSON.stringify({
+                    mode: 'no-cors',
                     model: model,
                     messages: [
                         { role: 'system', content: `你是一个回答问题的 AI。选项从左到右的顺序分别是 1，2，3，4。此题允许选择 ${answersAllowed} 个答案。请按照以下格式回答：选项名字/数字` },
